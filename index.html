@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="image/icons8-m-64.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>A wizard Project</title>
+</head>
+<body>
+
+ <!------------------first- menu & logo-------------------->
+
+    <div class="home" id="home">
+        <nav class="change-header">
+            <div class="nav-logo">
+                <img class="logo" src="image/icons8-m-64.png">
+                <h1 id="ahsa">ahsa</h1>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#home" class="pages">Hey there!</a>
+
+                    </li>
+                    <li>
+                        <a href="#about" class="pages">It's me</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#services" class="pages">Magics</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#newsletter" class="pages">Call me</a>
+                        
+                    </li>
+                </ul>
+                <div class="nav-close" id="nav-close" onclick="hideNav()">
+                    <img src="image/icons8-open-door-100.png">
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" onclick="showNav()">
+                <img src="image/icons8-door-100.png">
+            </div>
+        </nav>
+
+     <!------------------first- content-------------------->
+
+        <div class="header" id="header">
+            <div class="content">                  
+                <h2 id="title">Personal <span>Website</span></h2>
+                <p>This personal website present an awesome person <br> who provides many services <br> to make life
+                    more easy and fulfilling <br> for you, your family and your cat!
+                </p>
+                <button> <a  href="www.instagram.com/psycho_artist003">Learn more!</a></button>
+            </div>
+            <img class="first-pic" src="image/bubble-gum-girl-waiting.png">
+        </div>
+    </div>
+
+    <!------------------second-------------------->
+
+    <div class="about" id="about">
+        <h2>It's me</h2>
+        <div class="content first">
+            <img class="cat-pic" src="image/ginger-cat-759.png">
+            <p>
+                <span>Overview</span><br>
+                Hi there! im mahsa khalilian i can <br>provide many services to make life
+                     fulfilling <br> for you, your family and your cat! How wonderful!
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                <span>Why choose me?</span><br>
+                I can make a website for you to boost your career's income <br> also i will help you devlope your game and animate movies
+               <br> moreover i can edit any work any time you want , <br> beside i'm a member of Avengers!
+            </p>
+            <img src="image/mirage-page-not-found.png">
+        </div>
+
+    </div>
+
+    <!------------------third------------------->
+
+    <div class="services" id="services">
+        <h2>Magics</h2>
+        <p>
+            Here are some magics of mine that can help you! <br> Check them out!
+        </p>
+        <!------------------swiper-------------------->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>Web Develope</h2>
+                    <img src="image/tutti-page-under-construction-with-can-of-paint-and-brush-1.png">
+                </div>
+                <div class="swiper-slide">
+                    <h2>Animate</h2>
+                    <img src="image/bouncy-creating-an-illustration-with-graphic-tools-1.png">
+
+                </div>
+                <div class="swiper-slide">
+                    <h2>Game Develope</h2>
+                    <img src="image/arabica-videogame.png">
+
+                </div>
+                <div class="swiper-slide">
+                    <h2>Graphic Design</h2>
+                    <img src="image/atomic-painter-1.png">
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <!------------------last-------------------->
+    <div class="newsletter" id="newsletter">
+        <h2>Call me</h2>
+        <p>Send me a message and we can work together!</p>
+        <div class="mail-box">
+            <img src="image/surr-393.png">
+            <form>
+                <input type="text" placeholder="type..." autocomplete="off" required="required" id="text">
+                <button type="submit" onclick="send ()">Send!</button>
+            </form>
+            
+        </div>
+    </div>
+    <!------------------footer-------------------->
+    <div class="footer">
+        <div class="links">
+            <ul>
+                <li><h2>One view</h2></li>
+                <li><a href='#'>Prices</a></li>
+                <li><a href='#'>Promotion</a></li>
+                <li><a href='#'>Privacy & Policy</a></li>
+            </ul>
+
+            <ul>
+                <li><h2>Others</h2></li>
+                <li><a href='#'>Donate</a></li>
+                <li><a href='#'>Support</a></li>
+                <li><a href='#'>My website</a></li>
+            </ul>
+
+        </div>
+        <p>Copyright 2022. Mahsa Khalilian. <br> Project:Personal Website</p>
+    </div>
+  
+
+    <script src="main.js"></script>
+</body>
+</html>
